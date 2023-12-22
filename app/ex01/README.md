@@ -5,12 +5,8 @@
 #### 1. 슈퍼바이져 설치확인 - npm list -g supervisor
 #### 2. 슈퍼바이져 설치 - npm install -g supervisor
 #### 3. 파워쉘권한 - Set-ExecutionPolicy -Scope CurrentUser - ExecutionPolicy Unrestricted
-
 ## main01.js - 일반함수를 통해서 브라우져에 내용을 전달
-
 ## main02.js - 익명 화살표함수를 통해서 브라우져에 내용을 전달
-
 ## [참조]
-
-[node.js 2-1] http 프로젝트 생성 및 html file 전송
-https://youtu.be/HIh-T-pQ3E8?si=-MQoy_M4gVYHG4nz
+### [node.js 2-1] http 프로젝트 생성 및 html file 전송
+### https://youtu.be/HIh-T-pQ3E8?si=-MQoy_M4gVYHG4nz
