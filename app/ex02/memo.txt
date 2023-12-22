@@ -1,3 +1,0 @@
-[ 학습참조youtube ]
-[node.js 2-1] http 프로젝트 생성 및 html file 전송
-https://youtu.be/HIh-T-pQ3E8?si=-MQoy_M4gVYHG4nz
