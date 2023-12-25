@@ -1,0 +1,13 @@
+ex01
+EXPRESS 및 EJS설정
+
+main01.js
+- EXPRESS 라우팅 설정으로 경로별로 분기해서 보여줍니다.
+main02.js 
+- EJS파일의 내용을 불러와서 브라우져에 출력합니다.
+main03.js
+- EJS파일에 변수값을 전달후 출력합니다.
+
+[참조]
+express를 통한 라우팅사용. 변수 및 제어문
+https://youtu.be/HIh-T-pQ3E8?si=MA4wbCDY-nTCumju

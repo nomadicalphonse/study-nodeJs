@@ -1,8 +1,13 @@
 const http = require("http")
+const fs = require("fs") //파일사용할수 있도록 해주는 기능
 
 const app = http.createServer((req, res)=>{
-    console.log("HTTP서버 연동")
-    res.setHeader("Content-Type", "text/plain; charset=utf-8"); // charset=utf-8 설정 추가
-    res.end("ex01 HTTP서버가 {익명=>}함수를 통해서 실행되었습니다.")
+    res.setHeader("Content-Type", "text/html; charset=utf-8"); // charset=utf-8 설정 추가
+    if(req.url === "/"){
+        res.end("<h1>/로 접속</h1>"); //html태그를 직접입력
+    }else if(req.url === "/test"){
+        let data = fs.readFileSync("test.html")
+        res.end(data)
+    }
 })
 app.listen(3000)
