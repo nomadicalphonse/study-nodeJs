@@ -1,2 +1,30 @@
-test.ejs 파일이 호출되었습니다. 
-전달된 키값 <%=key%>
+main03_test.ejs 파일이 호출되었습니다. 
+<br><hr>
+전달된 키값 : <%=n%>
+<br><hr>
+<%=arr%>
+<br><hr>
+arr[0] : <%=arr[0]%>
+arr[1] : <%=arr[1]%>
+<br><hr>
+[for문으로 실행]<br>
+<% for (let i = 0; i < arr.length; i++) { %>
+    <%= arr[i] %><br>
+<% } %>
+<br><hr>
+======== [map이 포함한 변수값 출력하기] ========
+<br><hr>
+map.name : <%=map.name%>
+<br><hr>
+map.age : <%=map.age%>
+<br><hr>
+[map.list for문으로 실행]<br>
+<% for (let i = 0; i < map.list.length; i++) { %>
+    <%= map.list[i] %><br>
+<% } %>
+<br><hr>
+[map.list forEach문으로 실행]<br>
+<% map.list.forEach((d,index)=>{%>
+    <%= d %>(증가값:<%=index%>)<br>
+<%}) %>
+    
