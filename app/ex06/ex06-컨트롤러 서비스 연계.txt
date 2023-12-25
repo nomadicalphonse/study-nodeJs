@@ -1,0 +1,10 @@
+ex05
+ 
+컨트롤러 서비스 연계
+
+app01.js
+- 컨트롤러 서비스 연계
+- json data불러와서 for문으로 출력
+[참조]
+[node.js 3-2(2)] 서비스 파일 분할
+https://youtu.be/BodAEzI8U_0?si=ni2ItiXa39EtvClE

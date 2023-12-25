@@ -1,0 +1,10 @@
+ex04
+ 
+Router를 별도의 파일로 분리적용
+
+app01.js
+- 라우터파일 분할 
+
+[참조]
+[node.js 3-1(3)] router 파일 분할
+https://youtu.be/tJbOoWHBcGg?si=XgTqKmJDrd1c_Qn3

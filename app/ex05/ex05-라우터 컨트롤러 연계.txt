@@ -1,0 +1,10 @@
+ex05
+ 
+라우터 컨트롤러 연계
+
+app01.js
+- 컨트롤러 파일 분할
+
+[참조]
+[node.js 3-2(1)] 컨트롤러 파일 분할
+https://youtu.be/eU0BwAhQ6aY?si=A7i7TgsIORIGgoVV

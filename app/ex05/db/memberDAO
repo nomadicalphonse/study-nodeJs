@@ -1,0 +1,8 @@
+const DBMember = [
+    {id:"id0a", name:"이제니", addr:"산골짜기"},
+    {id:"id0b", name:"아이유", addr:"개똥별"},
+    {id:"id0c", name:"안유진", addr:"달나라"},
+    {id:"id0d", name:"한소희", addr:"은하수"},
+    {id:"id0e", name:"장원영", addr:"별나라"},
+]
+module.exports = DBMember;

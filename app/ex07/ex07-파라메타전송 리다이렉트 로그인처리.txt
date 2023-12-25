@@ -1,0 +1,10 @@
+ex07
+ 
+파라메타전송 리다이렉트 처리
+
+app01.js
+- 파라메타를 전송하고 로그인처리를 합니다.
+
+[참조]
+[node.js 3-3] redirect 및 parameter 받기
+https://youtu.be/VBZWDEfr88s?si=Rn-S4mAq2iZ31GTO
