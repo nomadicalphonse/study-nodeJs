@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie</title>
+ 
+</head>
+<body>
+    <h1>MAIN 페이지</h1><br>
+    <% console.log("cookie:", myCookie) %>
+    <% if(myCookie == undefined ){ %>
+        <script>
+            const opt = "width=300, height=200, top=500, left=500"
+            window.open("/cookie/popup","",opt)
+        </script>
+    <% }else{ %>
+        쿠키가 존재합니다. - 쿠키값 : <%=myCookie%>
+    <% } %>
+</body>
+</html>

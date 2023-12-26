@@ -1,0 +1,7 @@
+ex09
+ 
+cookie 암호화
+
+[참조]
+[node.js 4-1(3)] cookie 암호화
+https://youtu.be/c519U2U4ZmM?si=Dx_tpjKKtBQYpIfL

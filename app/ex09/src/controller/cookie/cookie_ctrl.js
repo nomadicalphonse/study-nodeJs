@@ -1,10 +1,8 @@
-const cookieConfig = {
-    httpOnly : true, //웹통신 할때만 쿠키를 적용
-    maxAge : 10000 //10초동안 쿠키를 유히
-}
+const config = require("../../../config/cookie_session/config")
+const cookieConfig = config.cookieConfig;
 
 const index = (req, res) => {
-    const myCookie = req.cookies.myCookie;
+    const myCookie = req.signedCookies.myCookie;
     res.render("cookie/main", {myCookie})
 }
 const popup = (req, res) => {

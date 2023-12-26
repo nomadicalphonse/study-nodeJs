@@ -1,0 +1,7 @@
+ex10
+
+SESSION기본설정
+
+[참조]
+[node.js 4-2(2)] session 기본 설정
+https://youtu.be/zA5ckQFsCFE?si=DxrY_ix7zX5XW-kL

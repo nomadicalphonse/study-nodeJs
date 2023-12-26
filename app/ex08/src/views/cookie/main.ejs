@@ -7,15 +7,15 @@
  
 </head>
 <body>
-    <h1>기본 페이지</h1><br>
-    <% console.log("cookie:", userCookie) %>
-    <% if(userCookie == undefined ){ %>
+    <h1>MAIN 페이지</h1><br>
+    <% console.log("cookie:", myCookie) %>
+    <% if(myCookie == undefined ){ %>
         <script>
             const opt = "width=300, height=200, top=500, left=500"
             window.open("/cookie/popup","",opt)
         </script>
     <% }else{ %>
-        쿠키가 존재합니다. - 쿠키값 : <%=userCookie%>
+        쿠키가 존재합니다. - 쿠키값 : <%=myCookie%>
     <% } %>
 </body>
 </html>
