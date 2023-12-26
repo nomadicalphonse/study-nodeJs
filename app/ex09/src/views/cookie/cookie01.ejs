@@ -3,10 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cookie</title>
+ 
 </head>
 <body>
-    <h1>쿠키 페이지 연동</h1><br>
-    <%=userCookie%>
+    <h1>기본 페이지</h1><br>
+    <% console.log("cookie:", userCookie) %>
+    <% if(userCookie == undefined ){ %>
+        <script>
+            const opt = "width=300, height=200, top=500, left=500"
+            window.open("/cookie/popup","",opt)
+        </script>
+    <% }else{ %>
+        쿠키가 존재합니다. - 쿠키값 : <%=userCookie%>
+    <% } %>
 </body>
 </html>

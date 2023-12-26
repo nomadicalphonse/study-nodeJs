@@ -1,11 +1,15 @@
-ex09
+ex08
  
 쿠키응용팝업창
+- 쿠키설정후 팝업창 10초동안 띄우지 않는 예제실습
+
 
 [설치및 셋팅]
 1. npm i cookie-parser --save
 
 
 [참조]
+[node.js 4-1(1)] cookie기본 설정
 [node.js 4-1(2)] cookie 응용(간단한 팝업 창)
+https://youtu.be/PUMVwl6wa5Q?si=EJP7PtcHtwf7_9u1
 https://youtu.be/xIB9yEaW6q4?si=Zdx6O927oJzVnKsH
