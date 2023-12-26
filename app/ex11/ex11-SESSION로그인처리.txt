@@ -1,0 +1,8 @@
+ex11
+#####################진행할 차례 
+SESSION 응용( post방식 로그인 )
+
+
+[참조]
+[node.js 4-2(3)] session 응용( post방식 로그인 )
+https://youtu.be/oeCVfflCp6U?si=lE36bDy2-M576mWy
