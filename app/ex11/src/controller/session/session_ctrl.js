@@ -25,4 +25,37 @@ const delSession = (req, res) => {
     res.redirect("/session/get_session")
 }
 
-module.exports = {index, setSession, getSession, delSession}
+const login = (req, res) => {
+    res.render("session/login", {nick:req.session.nick})
+}
+
+const loginCheck = (req, res) => {
+    const id = "aaa", pwd = "aaa", nick = "이제니"
+    if(req.body.id === id && req.body.pwd === pwd){
+        req.session.username = id
+        req.session.nick = nick
+        return res.redirect("/session/success")
+    }
+    const msg = `
+    <script>
+        alert("로그인 실패"); location.href = "/session/login";
+    </script>
+    `
+    //console.log(req.query)//get방식
+    console.log(req.body)//post방식
+    res.send(msg)
+}
+
+const success = (req, res) => {
+    if(req.session.username)
+        res.render("session/success", {nick:req.session.nick})
+    else
+        res.redirect("/session/login")
+}
+
+const logout = (req, res) => {
+    req.session.destroy()
+    res.redirect("/session/login")
+}
+
+module.exports = {index, setSession, getSession, delSession, login, loginCheck, success, logout}
