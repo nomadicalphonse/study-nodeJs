@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>MEMBER INDEX</h1>
+    <br><hr>
+    <table>
+    <tr>
+        <% field.forEach((fd, i) => { %>
+            <th style="border:1px solid;"><%= field[i]["name"] %></th>
+        <% }) %>
+    </tr>
+    <% list.forEach((member, i) => { %>
+        <tr>
+            <% field.forEach((fd, i) => { %>
+                <td style="border:1px solid;"><%= member[field[i]["name"]] %></td>
+            <% }) %>
+        </tr>
+    <% }) %>
+    </table>
+</body>
+</html>

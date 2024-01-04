@@ -1,0 +1,9 @@
+ex18
+
+파일업로드 다운로드
+
+[참조]
+[node.js 6-2(1)] 파일 업로드
+[node.js 6-2(2)] 파일 다운로드 및 이미지 미리보기 <---- 시작할 차례
+https://youtu.be/5xCg9fQ0Wjs?si=DiirzosKs-SdYAwN
+https://youtu.be/Ah3F3ar70BQ?si=f8AuqYam6kII1kTi

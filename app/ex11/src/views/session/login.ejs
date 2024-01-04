@@ -7,12 +7,14 @@
 </head>
 <body>
 <% if(nick != null) {%>
-nick - <%=nick%>
-<%}%>
+nick - <%=nick%> 로그인 상태입니다.
+<a href="/session/logout">로그아웃</a>
+<%}else{%>
     <form action="/session/login_check" method="post">
         <input type="text" name="id"><br>
         <input type="password" name="pwd"><br>
         <input type="submit" value="login">
     </form>
+<%}%>
 </body>
 </html>

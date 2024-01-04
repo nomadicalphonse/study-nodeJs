@@ -1,0 +1,7 @@
+ex16
+
+fetch 사용방법
+
+[참조]
+[node.js 6-1(3)] fetch 사용방법
+https://youtu.be/RlKJXk-r7WI?si=r_XK838SqJMcGp0b

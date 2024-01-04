@@ -1,0 +1,23 @@
+ex14
+
+insert( 데이터 추가 )
+
+- 커넥션방식을 pull방식으로 변경
+- 쿼리파라미터 name지원하기위해 mysql => mysql2로 라이브러리 변경
+- 1건 인서트, N건 묶음 트랜젝션처리 인서트 함수 생성
+- get방식 상세보기, 패스방식 상세보기
+ 
+============== [마리아db연결] START ==============
+npm install mysql2 --save
+============== [마리아db연결] END ==============
+
+[참조]
+[node.js 5-2(4)] insert( 데이터 추가 )
+[node.js 5-2(5)] select one( 하나의 정보 확인 )
+[node.js 5-2(6)] delete ( 정보 삭제 )
+[node.js 5-2(7)] update(수정) 및 include
+https://youtu.be/X0OKgwA1ThE?si=viz4xv4UQrq9PDIC
+https://youtu.be/B05F5M925X0?si=PQAaY-WNVINbbX-S
+https://youtu.be/iYs-0YJ7pc4?si=LaE05zi8_T4xRGDH
+https://youtu.be/J1ls6hlm52I?si=oq2XqH9bcSWnSdXY
+

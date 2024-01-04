@@ -1,0 +1,9 @@
+ex17
+
+Rest 기본 연동 설정
+- get, post, put, delete 사용
+
+[참조]
+[node.js 6-1(4)] Rest 기본 연동 설정
+https://youtu.be/NxrTYtYcPxk?si=p_k1HwcmeiHzq_kp
+

@@ -1,0 +1,12 @@
+ex12
+
+app01 - 동기방식
+app02 - setTimeout를 이용한 비동기방식 예제
+app03 - Promise를 사용해서 비동기방식에서 결과값을 돌려줄때까지 기다렸다가 다음내용을 실행
+app04 - async와 await를 이용해서 비동기방식함수의 결과값을 기다렸다가 정상적으로 처리 
+- 오라클설치 : npm install oracledb
+- 포스트방식 데이터사용 : npm i body-parser --save
+
+[참조]
+node.js 5-2(2) Promise 및 Async 사용방법
+https://youtu.be/_liISN30sB4?si=M6G_62NQphUUZ9Tn

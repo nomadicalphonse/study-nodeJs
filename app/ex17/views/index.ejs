@@ -1,0 +1,116 @@
+<script src="https://code.jquery.com/jquery-latest.min.js"></script>
+<script>
+    let content
+    window.onload = () => {
+        content = document.getElementById("content")
+        const getMembers = document.querySelector("#getMembers")
+        getMembers.addEventListener("click", getMember)
+
+        const registerBtn = document.querySelector("#registerBtn")
+        registerBtn.addEventListener("click", register)
+
+        const modifyBtn = document.querySelector("#modifyBtn")
+        modifyBtn.addEventListener("click", modify)        
+    }
+
+    const register = async () => {
+        const arr = $("#form").serializeArray()
+        console.log("arr : ", arr)
+        let data = {}
+        arr.forEach(d=>{
+            data[d.name] = d.value
+        })
+        
+        const res = await fetch("/register",{method:"post", 
+            headers : {"Content-Type" : "application/json"}, 
+            body : JSON.stringify(data)} )
+        const result = await res.json()
+        console.log("result:",result)
+        if(result === 1)
+            alert("회원가입 성공")
+        else
+            alert("회원가입 실패[문제발생]")
+    }
+
+    const modify = async () => {
+        const arr = $("#fo").serializeArray()
+        let data = {}
+        arr.forEach(d=>{
+            data[d.name] = d.value
+        })
+        
+        const res = await fetch("/modify",{method:"put", 
+            headers : {"Content-Type" : "application/json"}, 
+            body : JSON.stringify(data)} )
+        const result = await res.json()
+
+        if(result === 1)
+            alert("회원수정 성공")
+        else
+            alert("회원수정 실패[문제발생]")
+    }
+
+
+    async function del(){
+        const res = await fetch("/delete",{method:"delete", 
+        headers : {"Content-Type" : "application/json"}, 
+        body : JSON.stringify({id:$("#del_id").val()} ) } )
+
+        const result = await res.json()
+
+        if(result === 1)
+            alert("회원삭제 성공")
+        else
+            alert("회원삭제 실패[문제발생]")        
+    }
+
+    const getMember = () =>{
+        fetch("/get_members")
+        .then(res => res.json())
+        .then(members =>{
+            console.log(members)
+            let msg = `<table style="border:solid 1px">`;
+            msg += `
+                <tr>
+                    <th>아이디</th>
+                    <th>이름</th>
+                    <th>주소</th>
+                </tr>
+                `;    
+            members.forEach(mem => {
+                msg += `
+                <tr>
+                    <td>${mem.id}</td>
+                    <td>${mem.name}</td>
+                    <td>${mem.addr}</td>
+                </tr>
+                `;  
+            });
+            msg += `</table>`
+            ;
+            content.innerHTML = msg;
+        })
+    }
+</script>
+<div id="content"></div>
+<hr>
+<button type="button" id="getMembers">목록 보기</button>
+<hr>
+<form id="form">
+    <input type="text" name="id" placeholder="input id"><br>
+    <input type="text" name="pwd" placeholder="input pwd"><br>
+    <input type="text" name="name" placeholder="input name"><br>
+    <input type="text" name="addr" placeholder="input addr"><br>
+    <input type="button" id="registerBtn" value="데이터추가">
+</form>
+
+<form id="fo">
+    <input type="text" name="id" placeholder="존재하는 id입력"><br>
+    <input type="text" name="pwd" placeholder="수정할 pwd"><br>
+    <input type="text" name="name" placeholder="수정할 name"><br>
+    <input type="text" name="addr" placeholder="수정할 addr"><br>
+    <input type="button" id="modifyBtn" value="데이터수정">
+</form>
+<hr>
+<input type="text" id="del_id" placeholder="삭제할 id 입력"><br>
+<input type="button" id="delBtn" value="데이터삭제" onclick="del()">

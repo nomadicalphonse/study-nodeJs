@@ -1,0 +1,7 @@
+ex15
+
+bcrypt ( 비밀번호 암호화 )
+
+[참조]
+[node.js 6-1(1)] bcrypt ( 비밀번호 암호화 )
+https://youtu.be/RlKJXk-r7WI?si=r_XK838SqJMcGp0b

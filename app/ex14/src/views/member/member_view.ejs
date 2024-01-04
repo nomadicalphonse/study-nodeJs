@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>DETAIL VIEW</h1>
+    <br><hr>
+    <a href="/member">리스트</a>
+    <table>
+        <tr>
+            <td style="border:0px solid;">id</td>
+            <td style="border:0px solid;"><%= member.id%></td>
+        </tr>
+        <tr>
+            <td style="border:0px solid;">pwd</td>
+            <td style="border:0px solid;"><%= member.pwd%></td>
+        </tr>
+        <tr>
+            <td style="border:0px solid;">name</td>
+            <td style="border:0px solid;"><%= member.name%></td>
+        </tr>
+        <tr>
+            <td style="border:0px solid;">addr</td>
+            <td style="border:0px solid;"><%= member.addr%></td>
+        </tr>                        
+    </table>
+    <hr>
+    <a href="/member/modify_form/<%=member.id%>">수정</a>
+    <a href="/member/delete/<%=member.id%>">삭제</a>
+</body>
+</html>

@@ -1,0 +1,39 @@
+ex11
+
+DB연동 및 select
+
+============== [오라클db연결] START ==============
+
+오라클db를 연결하려면 해당서버에 오라클클라이언트가 설치되어 있어야 합니다.
+https://www.oracle.com/database/technologies/instant-client/winx64-64-downloads.html
+
+Oracle Instant Client를 설치하는 과정은 다음과 같습니다:
+
+1. Oracle Instant Client 다운로드:
+Oracle Instant Client 페이지에서 자신의 운영 체제에 맞는 버전을 다운로드하세요.
+
+2.압축 해제:
+다운로드한 파일을 원하는 위치에 압축 해제하세요. 압축 해제한 폴더는 Oracle Instant Client가 설치될 위치가 됩니다.
+
+3. 환경 변수 설정:
+압축 해제한 Oracle Instant Client의 경로를 시스템 환경 변수 PATH에 추가하려면 다음 단계를 따르세요:
+- Windows에서는 '제어판 > 시스템 및 보안 > 시스템 > 고급 시스템 설정 > 환경 변수'로 이동합니다.
+- '시스템 변수' 섹션의 'Path' 항목을 찾아 '편집' 버튼을 클릭합니다.
+- 새 창에서 '새로 만들기' 버튼을 클릭하고 Oracle Instant Client가 설치된 경로를 입력한 후 '확인'을 클릭하여 창을 모두 닫습니다.
+
+4. Node.js 재시작:
+환경 변수 변경 사항을 적용하려면 Node.js를 재시작해야 합니다.
+이 단계를 모두 완료한 후 프로그램을 다시 실행해 보세요. 여전히 문제가 발생한다면 알려주시기 바랍니다.
+
+============== [오라클db연결] END ==============
+
+
+============== [마리아db연결] START ==============
+npm install mysql --save
+
+============== [마리아db연결] END ==============
+
+[참조]
+[node.js 5-2(3)] DB연동 및 select( 모든 목록 확인)
+https://youtu.be/LlpNCvzPqw0?si=ftbbxnBZjrXafJ-w
+
