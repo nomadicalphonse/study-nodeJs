@@ -20,5 +20,5 @@ npm install mysql2 --save [최신버전]
 npm i bcrypt --save
 [파일업로드_다운로드]
 /* 최신버전에서는 한글이 깨진다는 문제점이 있기때문에 1.4.4버전을 설치 */
-npm list multer /* 최신버전 */
+npm install multer@latest /* 최신버전 */
 npm install multer@1.4.4

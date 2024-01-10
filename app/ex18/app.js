@@ -4,6 +4,7 @@ const app = express()
 const bodyParser = require("body-parser")
 app.use(bodyParser.urlencoded({extended:false}))
 const router = require("./src/routes/router")(app)
+app.use("/static", express.static(__dirname+"/public"))
 
 app.set("views", "./src/views")
 app.set("view engine", "ejs")

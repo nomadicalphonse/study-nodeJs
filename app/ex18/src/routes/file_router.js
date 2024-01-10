@@ -7,6 +7,7 @@ const f_filter = (req, file, cb)=>{
     const type = file.mimetype.split("/")
     console.log(type);
     const fileType = type[0]
+    
     if(fileType === 'image'){
         cb(null, true)//저장하겠다.
     }else{
@@ -33,5 +34,9 @@ function storageConfig(savePath){//최신버전 multer에서 파일명 한글깨
 const fileCtrl = require("../controller/file_controller")
 router.get("/", fileCtrl.views.index)
 router.post("/upload", upload.single("file_name"), fileCtrl.process.upload)
-
+router.get("/list", fileCtrl.views.list)
+router.get("/download/:fileName", fileCtrl.views.download)
+router.get("/deleteFile/:fileName", fileCtrl.process.deleteFile)
+router.get("/modify_form/:fileName", fileCtrl.views.modifyForm)
+router.post("/modify", upload.single("newFileName"), fileCtrl.process.modify)
 module.exports = router

@@ -1,7 +1,12 @@
+<script src="/static/js/image_read.js"></script>
+
 file 연동 확인
 <br><hr>
 <form action="/file/upload" method="post" enctype="multipart/form-data">
     <input type="text" name="title"><br>
-    <input type="file" name="file_name"><br>
+    <img id="preview" src="#" width="100" height="100" alt="이미지가 없음"><br>
+    <input type="file" name="file_name" onchange="readURL(this)"><br>
     <input type="submit" value="전송">
 </form>
+<hr>
+<a href="/file/list">데이터 확인</a>

@@ -1,0 +1,12 @@
+<%=files%>
+<hr>
+<% files.forEach(item => {%>
+    <img src="/file/download/<%=item%>" width="100px" height="100px">
+    <br>
+    <a href="/file/download/<%=item%>"><%=item%></a>
+    <br>
+    <a href="/file/deleteFile/<%=item%>">삭제</a>
+    <br>
+    <a href="/file/modify_form/<%=item%>">변경</a>   
+    <hr>
+<%})%>
