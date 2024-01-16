@@ -1,0 +1,45 @@
+LIST
+<table border="1">
+    <tr>
+        <th>번호</th>
+        <th>제목</th>
+        <th>등록날짜</th>
+        <th>조회수</th>        
+    </tr>
+    <% list.forEach(data => { %>
+    <tr>
+        <td><%=data.NUM%></td>
+        <td>
+            <a href="/pg/content/<%=data.NUM%>">
+                <%=data.TITLE%>
+            </a>
+        </td>
+        <td><%=data.PDATE%></td>
+        <td><%=data.COUNT%></td>        
+    </tr>   
+    <% }) %>
+    <% if(list.length === 0){%>
+        <tr>
+            <th colspan="4">등록된 정보가 없습니다.</th>    
+        </tr>           
+    <%} %>
+    <tr>
+        <td colspan="4">
+            <% if(start <= 1){ %>
+                <button disabled>이전</button>
+            <%}else{%>
+                <button onclick="location.href='/pg/list?start=<%=start-1%>'">이전</button>
+            <%}%>
+            <%for(var i = 1; i <= page.totPage; i++){%>
+                <a href="/pg/list?start=<%=i%>"><%=i%></a>
+            <%}%>
+            
+            <%if(start < page.totPage){%>
+                <button onclick="location.href='/pg/list?start=<%=start+1%>'">다음</button>
+            <%}else{%>
+                <button disabled>다음</button>
+            <%}%>
+            ( 총개수 <%=totalContent%> ) / <a href="/pg/write_form">글등록</a>
+        </td>
+    </tr>
+</table>

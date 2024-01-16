@@ -7,8 +7,8 @@ const index = (req, res) => {
 const loginCheck = (req, res) => {
     console.log(req.query.id)
     console.log(req.query.pwd)
-    const id = "aaa";
-    const pwd = "aaa";
+    const id = "adm";
+    const pwd = "1234";
     if(id === req.query.id && pwd === req.query.pwd){
          console.log("로그인 성공");
          res.redirect(`/info?id=${req.query.id}`);

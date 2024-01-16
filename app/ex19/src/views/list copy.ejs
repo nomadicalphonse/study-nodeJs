@@ -1,0 +1,31 @@
+LIST
+<table border="1">
+    <tr>
+        <th>번호</th>
+        <th>제목</th>
+        <th>등록날짜</th>
+        <th>조회수</th>        
+    </tr>
+    <% list.forEach(data => { %>
+    <tr>
+        <td><%=data.NUM%></td>
+        <td>
+            <a href="/pg/content/<%=data.NUM%>">
+                <%=data.TITLE%>
+            </a>
+        </td>
+        <td><%=data.PDATE%></td>
+        <td><%=data.COUNT%></td>        
+    </tr>   
+    <% }) %>
+    <% if(list.length === 0){%>
+        <tr>
+            <th colspan="4">등록된 정보가 없습니다.</th>    
+        </tr>           
+    <%} %>
+    <tr>
+        <td colspan="4">
+            <a href="/pg/write_form">글등록</a>
+        </td>
+    </tr>
+</table>

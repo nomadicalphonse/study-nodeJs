@@ -1,0 +1,18 @@
+ex19
+
+페이징처리
+
+CREATE TABLE PAGING(
+NUM INT PRIMARY KEY AUTO_INCREMENT,
+TITLE VARCHAR(30),
+COUNT INT
+);
+
+[참조]
+[node.js 6-3(1)] 페이징 준비 단계 ( 모든 목록 확인 )
+[node.js 6-3(2)] 페이징 준비 단계 ( 추가, 상세 내용, 조회수 증가 )
+[node.js 6-3(3)] 페이징 처리
+https://youtu.be/rkQwMC9QVLk?si=tC-hseJDqpyRZFCB
+https://youtu.be/WjDD2-IQBcA?si=F8QECuqWoza6OnGg
+https://youtu.be/WtXghvhRvRE?si=Ts_rpumjwILgD_Tk
+
